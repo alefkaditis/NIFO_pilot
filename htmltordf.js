@@ -98,15 +98,15 @@ var createHtmlToRDFa = function() {
                 country = config['prefix']['nifo']+'North%20Macedonia';
                 countryLabel = 'North_Macedonia';
                 countryCode = 'MKD';
-            } else if (fileName.indexOf('Czech_Republic') >= 0 || fileName.indexOf('Czech Republic') >= 0) {
+            } else if (fileName.indexOf('Czech_Republic') >= 0 || fileName.indexOf('Czech Republic') >= 0 || fileName.indexOf('CzechRep') >= 0) {
                 // Czech Republic
                 country = config['prefix']['nifo']+'Czech%20Republic';
                 countryLabel = 'Czech_Republic';
                 countryCode = 'CZE';
-            } else if (fileName.indexOf('EU_editor') >= 0) {
+            } else if (fileName.indexOf('EU_editor') >= 0 || fileName.indexOf('EU') >= 0) {
                 // European Union Editor
                 country = config['prefix']['nifo']+'European%20Union';
-                countryLabel = 'EU_editor';
+                countryLabel = 'European_Union';
                 countryCode = 'EU';
             } 
         }    
@@ -182,12 +182,15 @@ var createHtmlToRDFa = function() {
                             $(this).attr("property", config['prop']['source']);
                             text= encodeURI($(this).children('a').attr('href'));
                             $(this).attr("href", text);
-                        } else if ($(this).text().indexOf("Digital Government Indicators") >= 0) {
-                            //Digital Government Indicators
+                        } else if ($(this).text().indexOf("Digital Public Administration Indicators") >= 0) {
+                            //Digital Public Administration Indicators
                             label = $(this).text()+" "+countryLabel;
                             var sources = [];
                             var source = [];
                             $(this).attr("property", config['prop']['title']);
+                            $(this).nextAll('table').first().find('img').each(function(index, element){
+                                $(this).addClass('keepElement');
+                            });
                             $(this).nextAll('table').first().find('p').each(function(index, element){
                                 if ($(this).text().indexOf("Percentage of individuals using the internet for") >= 0) {
                                     var dimensionLabel = $(this).text();
@@ -210,23 +213,76 @@ var createHtmlToRDFa = function() {
                             $(this).after('<span style="display:none;" property="'+config['prop']['structure']+'" href="'+config['prefix']['datastructure']+label.replace(/ /g,'')+'"></span>');
                             $(this).nextUntil(config['subsection_header']).add($(this)).wrapAll('<div resource="'+config['prefix']['dataset']+label.replace(/ /g,'')+'" typeOf="'+config['class']['dataset']+'"></div>');
                             $('body').children('div').first().children('p').first().before('<span property="'+config['prop']['relation']+'" href="'+config['prefix']['dataset']+label.replace(/ /g,'')+'"></span>');
+                        } else if ($(this).text().indexOf("Interoperability State of Play") >= 0) {
+                            //Interoperability State of Play
+                            $(this).attr("property", config['prop']['title']);
+                            $(this).nextUntil(config['section_header'], 'p:contains("Source:")').children('a').attr('property', config['prop']['relation']);
+                        } else if ($(this).text().indexOf("eGovernment State of Play") >= 0) {
+                            //eGovernment State of Play
+                            $(this).attr("property", config['prop']['title']);
+                            $(this).nextUntil(config['section_header'], 'p:contains("Source:")').children('a').attr('property', config['prop']['relation']);
+                            let isFirstImg = false;
+                            $(this).nextUntil(config['section_header']).each(function(index, element){
+                                if ($(this).attr('src') && !isFirstImg) {
+                                    $(this).addClass('keepElement');
+                                    isFirstImg = true;
+                                }
+                            });
+                            // $(this).first().find("img").addClass('keepElement');
                         } else {
                             //else
                         }
                         $(this).find("img").addClass('keepElement');
                     });
                     break;
-                case "Digital Government Highlights":
+                case "Digital Public Administration Highlights":
                         $(this).nextUntil(config['section_header']).each(function (index, elem) {
+                            switch(index){
+                                case 0:
+                                    // Digital Public Administration Political Communications
+                                    $(this).attr("property", config['prop']['title']);
+                                    text= $(this).text().replace(/.*: /,'');
+                                    $(this).attr("content", text);
+                                    break;
+                                case 1:
+                                    // Digital Public Administration Legislation
+                                    $(this).attr("property", config['prop']['title']);
+                                    text= $(this).text().replace(/.*: /,'');
+                                    $(this).attr("content", text);
+                                    break;
+                                case 2:
+                                    // Digital Public Administration Governance
+                                    $(this).attr("property", config['prop']['title']);
+                                    text= $(this).text().replace(/.*: /,'');
+                                    $(this).attr("content", text);
+                                    break;
+                                case 3:
+                                    // Digital Public Administration Infrastructure
+                                    $(this).attr("property", config['prop']['title']);
+                                    text= $(this).text().replace(/.*: /,'');
+                                    $(this).attr("content", text);
+                                    break;
+                            }
                             $(this).find("img").addClass('keepElement');
                         });
                     break;
-                case "Digital Government Political Communications":
-                        $(this).nextUntil(config['section_header']).each(function (index, elem) {
+                case "Digital Public Administration Political Communications":
+                        $(this).nextUntil(config['section_header']).each(function (index, elem) {      
+                            content = $(this).text();
+                            $(this).find('a').each(function(index, element){
+                                var linkText = $(this).text().toLowerCase();
+                                if( checkArray(linkText, Object.keys(config['type_framework']).map(function(k) { return config['type_framework'][k] })) ){
+                                    $(this).attr('typeOf', config['class']['contact']);
+                                    $(this).attr('property', config['prop']['relation']);
+                                    var linkURI = encodeURI($(this).attr('href'));
+                                    $(this).attr('href', linkURI);
+                                    $(this).after('<span resource="'+linkURI+'" property="'+config['prop']['title']+'" content="'+$(this).text()+'"></span>')
+                                }
+                            });
                             $(this).find("img").addClass('keepElement');
                         });
                     break;
-                case "Digital Government Legislation":
+                case "Digital Public Administration Legislation":
                         $('body').children('div').first().children('p').first().before('<span property="'+config['prop']['relation']+'" href="'+config['prefix']['legalframework']+countryLabel+'"></span>');
                         $(this).nextUntil(config['section_header']).each(function (index, elem) {
                             $(this).find("img").addClass('keepElement');
@@ -243,7 +299,7 @@ var createHtmlToRDFa = function() {
                         });
                         $(this).nextUntil(config['section_header']).add($(this).closest(config['section_header'])).wrapAll('<div resource="'+config['prefix']['legalframework']+countryLabel+'" typeOf="'+config['class']['framework']+'"></div>');
                     break;
-                case "Digital Government Governance":
+                case "Digital Public Administration Governance":
                         var personURI;
                         $(this).nextUntil(config['section_header'], 'table').each(function (index, elem) {
                             $(this).find("img").addClass('keepElement').css('max-height', '300px');
@@ -305,84 +361,43 @@ var createHtmlToRDFa = function() {
                             });
                         });
                     break;
-                case "Digital Government Infrastructure":
-                        $(this).nextUntil(config['section_header']).each(function (index, elem) {
-                            $(this).find("img").addClass('keepElement');
+                case "Digital Public Administration Infrastructure":
+                    $(this).nextUntil(config['section_header']).each(function (index, elem) {     
+                        $(this).find("img").addClass('keepElement');
+                        $(this).find('a').each(function (index, elem) {
+                            var linkText = $(this).text().toLowerCase();
+                            var linkURI = encodeURI($(this).attr('href'));
+                            $(this).attr("typeOf", config['class']['framework']);
+                            $(this).attr('property', config['prop']['relation']);
+                            $(this).attr("title", linkText);
+                            $(this).attr("resource", linkURI);
                         });
+                    });
                     break;
-                case "Digital Government Services for Citizens":
-                        $(this).nextUntil(config['section_header']).each(function (index, elem) {
-                            $(this).find("img").addClass('keepElement');
-                            $(this).nextAll('table').first().find('p > strong').each(function(index, element){
-                                var publicService = $(this).text();
-                                var publicServiceURI = config['prefix']['service']+countryLabel+"/"+publicService.replace(/[^\w]/g,'');
-                                $(this).attr("about", publicServiceURI);
-                                $(this).attr("typeOf", config['class']['publicservice']);
-                                $(this).attr("property", config['prop']['title']);
-                                $(this).after('<span about="'+publicServiceURI+'" property="'+config['prop']['relation']+'" href="'+country+'"></span>')
-                                $(this).parentsUntil('table').nextAll('tr').each(function(index, element){
-                                    switch(index){
-                                        case 0:
-                                            $(this).find('p').last().attr("about", publicServiceURI);
-                                            $(this).find('p').last().attr("property", config['prop']['competent']);
-                                            break;
-                                        case 1:
-                                            $(this).find('p').last().attr("about", publicServiceURI);
-                                            $(this).find('p').last().attr("property", config['prop']['url']);
-                                            $(this).find('p').last().attr("href", $(this).children('a').first().attr('href'));
-                                            break;
-                                        case 2:
-                                            $(this).find('p').last().parent().attr("about", publicServiceURI);
-                                            $(this).find('p').last().parent().attr("property", config['prop']['description']);
-                                            break;
-                                    }
-                                });
-                            });
-                        });           
-                    break;
-                case "Digital Government Services for Businesses":
-                        $(this).nextUntil(config['section_header']).each(function (index, elem) {
-                            $(this).find("img").addClass('keepElement');
-                            $(this).nextAll('table').first().find('p > strong').each(function(index, element){
-                                var publicService = $(this).text();
-                                var publicServiceURI = config['prefix']['service']+countryLabel+"/"+publicService.replace(/[^\w]/g,'');
-                                $(this).attr("about", publicServiceURI);
-                                $(this).attr("typeOf", config['class']['publicservice']);
-                                $(this).attr("property", config['prop']['title']);
-                                $(this).after('<span about="'+publicServiceURI+'" property="'+config['prop']['relation']+'" href="'+country+'"></span>')
-                                $(this).parentsUntil('table').nextAll('tr').each(function(index, element){
-                                    switch(index){
-                                        case 0:
-                                            $(this).find('p').last().attr("about", publicServiceURI);
-                                            $(this).find('p').last().attr("property", config['prop']['competent']);
-                                            break;
-                                        case 1:
-                                            $(this).find('p').last().attr("about", publicServiceURI);
-                                            $(this).find('p').last().attr("property", config['prop']['url']);
-                                            $(this).find('p').last().attr("href", $(this).children('a').first().attr('href'));
-                                            break;
-                                        case 2:
-                                            $(this).find('p').last().parent().attr("about", publicServiceURI);
-                                            $(this).find('p').last().parent().attr("property", config['prop']['description']);
-                                            break;
-                                    }
-                                });
-                            });
-                            if ($(this).text().indexOf("The Digital Government Factsheets") >= 0) {
-                                $(this).nextAll("p:contains('isa'), p:contains('ISA')").each(function(index, element){
-                                    $(this).addClass('keepElement');
-                                });
-                                // $(this).nextAll().remove();
-                                // $(this).remove();
-                                // return false;
-                            }
+                case "Cross Border Digital Public Administration Services for Citizens and Business":
+                    $(this).nextUntil(config['section_header'], 'ul').each(function (index, elem) {
+                        $(this).children('li').each(function (index, elem) {
+                            var publicService = $(this).find('a').text();
+                            var publicServiceURI = config['prefix']['service']+countryLabel+"/"+publicService.replace(/[^\w]/g,'');
+                            $(this).attr("about", publicServiceURI);
+                            $(this).attr("typeOf", config['class']['publicservice']);
+                            $(this).attr("property", config['prop']['title']);
+                            $(this).attr("title", publicService);
+                            $(this).attr("property", config['prop']['url']);
+                            $(this).attr("resource", $(this).children('a').first().attr('href'));        
                         });
+                        if ($(this).text().indexOf("The Digital Government Factsheets") >= 0) {
+                            $(this).nextAll("p:contains('isa'), p:contains('ISA')").each(function(index, element){
+                                $(this).addClass('keepElement');
+                            });
+                        }
+                    });
                     break;
             }
         });
 
         $('body').children('div').first().children('p').each(function(index, element){
-             if ($(this).text().indexOf("Digital Government Factsheet 2019") >= 0 ||
+             if ($(this).text().indexOf("Digital Government Factsheet 2020") >= 0 ||
                  $(this).text().indexOf(countryLabel) >= 0 || 
                  $(this).text().indexOf('The United Kingdom') >= 0 || 
                  $(this).text().indexOf('Czech Republic') >= 0 || 
@@ -425,7 +440,7 @@ var createHtmlToRDFa = function() {
             default:
                 $('p.image-container').after('<h2>'+countryLabel+'</h2>');
         }
-        $('p.image-container').after('<h2>Digital Government Factsheet 2019</h2>');
+        $('p.image-container').after('<h2>Digital Public Administration factsheet 2020</h2>');
         /*=================*/
         /* GENERATE OUTPUT */
         /*=================*/

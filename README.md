@@ -58,7 +58,7 @@ The `config.json` file allows users to customise the transformation script and m
 * Configure document metadata, including the date issued, the applicable licence, the HTML tag used to identify the main sections in the document and the HTML tag used to identify the subsections in the document:
 ```
 {
-    "issued" : "2019-07",
+    "issued" : "2020-09",
     "licence" : "https://creativecommons.org/licenses/by/4.0/",
     "section_header" : "h1",
     "subsection_header" : "h2",
@@ -151,26 +151,23 @@ switch(content){
     case "Country Profile":
         //Custom code here
         break;
-    case "Digital Government Highlights":
+    case "Digital Public Administration Highlights":
         //Custom code here
         break;
-    case "Digital Government Political Communications":
+    case "Digital Public Administration Political Communications":
         //Custom code here
         break;
-    case "Digital Government Legislation":
+    case "Digital Public Administration Legislation":
         //Custom code here
         break;
-    case "Digital Government Governance":
+    case "Digital Public Administration Governance":
         //Custom code here
         break;
-    case "Digital Government Infrastructure":
+    case "Digital Public Administration Infrastructure":
         //Custom code here
         break;
-    case "Digital Government Services for Citizens":
+    case "Cross Border Digital Public Administration Services for Citizens and Business":
         //Custom code here                 
-        break;
-    case "Digital Government Services for Businesses":
-        //Custom code here
         break;
 }
 ```

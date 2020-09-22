@@ -1,0 +1,866 @@
+{
+  "@context": {
+    "rdfa": "http://www.w3.org/ns/rdfa#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcmi": "http://purl.org/dc/dcmitype/",
+    "dbo": "http://dbpedia.org/ontology/",
+    "dbp": "http://dbpedia.org/property/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "org": "http://www.w3.org/ns/org#",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "http://data.europa.eu/nifo/factsheet/Cyprus",
+      "http://purl.org/dc/terms/isPartOf": [
+        {
+          "@id": "http://data.europa.eu/nifo/factsheets/"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+        {
+          "@id": "http://dbpedia.org/resource/Cyprus"
+        }
+      ],
+      "http://purl.org/dc/terms/issued": [
+        "2019-07"
+      ],
+      "http://purl.org/dc/terms/license": [
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "http://purl.org/dc/terms/spatial": [
+        "http://publications.europa.eu/resource/authority/country/CYP"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "http://example.org/nifo/dataset/DigitalPublicAdministrationIndicatorsCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/legalframework/Cyprus"
+        },
+        {
+          "@id": "https://ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-people"
+        },
+        {
+          "@id": "https://issuu.com/presidency-reform-cyprus/docs/sxedio_drasis_ke_pinakes_gia_veltio?e=23693381/33573909"
+        },
+        {
+          "@id": "http://example.org/nifo/person/KyriacosKokkinos"
+        },
+        {
+          "@id": "http://example.org/nifo/person/Dr.ElisavetConstantinou"
+        },
+        {
+          "@id": "http://example.org/nifo/person/ActingDirector,DepartmentofInformationTechnologyServices(DITS)"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://portal.dls.moi.gov.cy/en-us/Pages/The-Department-of-Lands-and-Surveys-Web-Portal.aspx"
+        },
+        {
+          "@id": "http://www.cyprus.gov.cy/"
+        },
+        {
+          "@id": "http://eforms.businessincyprus.gov.cy/eforms/ekeforms.nsf/eke.personalspace_en/eke.personalspace_en?OpenForm"
+        },
+        {
+          "@id": "https://cge.cyprus.gov.cy/"
+        },
+        {
+          "@id": "https://anticorruption.pias.gov.cy/pias/pias.nsf/index_en/index_en?opendocument"
+        },
+        {
+          "@id": "http://www.police.gov.cy/pias/pias.nsf/infocomplaints_en/infocomplaints_en?opendocument"
+        },
+        {
+          "@id": "http://www.cypruspost.post/"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://dits.dmrid.gov.cy/dmrid/dits/dits.nsf/All/123A11A0573FE559C22578F60034739E?OpenDocument"
+        },
+        {
+          "@id": "http://www.mof.gov.cy/mof/dits/dits.nsf/index_en/index_en?OpenDocument"
+        },
+        {
+          "@id": "http://www.mof.gov.cy/papd"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "https://www.eprocurement.gov.cy/ceproc/home.do"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://www.mof.gov.cy/mof/DITS/dits.nsf/All/7DEFAE951CBAA6E9C22578180034E0CF?OpenDocument"
+        },
+        {
+          "@id": "http://www.moa.gov.cy/moa/dfmr/dfmr.nsf/All/F9C1AD116BB0F692C2258320002A78DB/$file/DFMR_IT%20Strategy.pdf"
+        },
+        {
+          "@id": "http://www.piopressreleases.com.cy/"
+        },
+        {
+          "@id": "http://www.publications.gov.cy/"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "https://ec.europa.eu/health/sites/health/files/cross_border_care/docs/cbhc_ncp_en.pdf"
+        },
+        {
+          "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32011L0024"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        }
+      ],
+      "http://dbpedia.org/ontology/populationTotal": [
+        "875 899 inhabitants (2019)"
+      ],
+      "http://dbpedia.org/property/gdpNominal": [
+        "21 943.6 million Euros (2019)"
+      ],
+      "http://dbpedia.org/property/gdpPppPerCapita": [
+        "89 (2019)"
+      ],
+      "http://dbpedia.org/ontology/areaTotal": [
+        " 9 249 km2"
+      ],
+      "http://dbpedia.org/ontology/capital": [
+        "Nicosia"
+      ],
+      "http://purl.org/dc/terms/language": [
+        "Greek"
+      ],
+      "http://dbpedia.org/ontology/currency": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/currency/Euro"
+        }
+      ],
+      "http://purl.org/dc/terms/source": [
+        {
+          "@id": "http://ec.europa.eu/eurostat/data/database"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "http://data.europa.eu/nifo/factsheet/undefined"
+        },
+        {
+          "@id": "https://ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-people"
+        }
+      ],
+      "http://purl.org/dc/terms/title": [
+        "Interoperability State of Play",
+        "eGovernment State of Play ",
+        "Digital Public Administration Political Communications",
+        "Digital Public Administration Legislation",
+        "The national legislation (Ν.50(Ι)/2019) related to the accessibility of the Websites and Mobile Applications of Public Sector Bodies was harmonised in April 2019 following the EU Directive."
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/dataset/DigitalPublicAdministrationIndicatorsCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#DataSet"
+      ],
+      "http://purl.org/dc/terms/title": [
+        "Digital Public Administration Indicators"
+      ],
+      "http://purl.org/linked-data/cube#structure": [
+        {
+          "@id": "http://example.org/nifo/structure/DigitalPublicAdministrationIndicatorsCyprus"
+        }
+      ],
+      "http://purl.org/dc/terms/source": [
+        "http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=isoc_bde15ei&lang=en,http://appsso.eurostat.ec.europa.eu/nui/submitViewTableAction.do"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/legalframework/Cyprus",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2017_1_184/index.html"
+        },
+        {
+          "@id": "http://www.cylaw.org/nomoi/arith/2006_1_132.pdf"
+        },
+        {
+          "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102"
+        },
+        {
+          "@id": "http://journals.sas.ac.uk/deeslr/article/viewFile/1756/1693"
+        },
+        {
+          "@id": "http://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page3b_en/page3b_en?opendocument"
+        },
+        {
+          "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2016_1_73/index.html"
+        },
+        {
+          "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0055"
+        },
+        {
+          "@id": "http://www.cylaw.org/nomoi/indexes/2012_1_81.html"
+        },
+        {
+          "@id": "http://www.cylaw.org/nomoi/indexes/2019_1_59.html"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/structure/DigitalPublicAdministrationIndicatorsCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#DataStructureDefinition"
+      ],
+      "http://purl.org/linked-data/cube#component": [
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinCyprus"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinCyprus"
+        },
+        {
+          "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinCyprus"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#MeasureProperty"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#MeasureProperty"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#MeasureProperty"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinCyprus",
+      "@type": [
+        "http://purl.org/linked-data/cube#MeasureProperty"
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/nifo/factsheet/undefined",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework",
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://www.mof.gov.cy/mof/gpo/gpo.nsf/All/0FB0F6C76FD8A8E3C22583D30066CF1D?OpenDocument",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law Νo 50(Ι)/2019"
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/indexes/2019_1_59.html",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law 59 (I)/2019"
+      ]
+    },
+    {
+      "@id": "https://issuu.com/presidency-reform-cyprus/docs/sxedio_drasis_ke_pinakes_gia_veltio?e=23693381/33573909",
+      "@type": [
+        "http://schema.org/ContactPoint"
+      ],
+      "http://purl.org/dc/terms/title": [
+        "Action Plan"
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2017_1_184/index.html",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Access to Public Sector Information (Law 184(Ι)/2017)"
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/arith/2006_1_132.pdf",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law 132(I)/2006"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2015_1_205/index.html"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2015_1_205/index.html",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law 205(I)/2015"
+      ]
+    },
+    {
+      "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016L2102",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Directive (EU) 2016/2102"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "https://www.mof.gov.cy/mof/gpo/gpo.nsf/All/0FB0F6C76FD8A8E3C22583D30066CF1D?OpenDocument"
+        }
+      ]
+    },
+    {
+      "@id": "http://journals.sas.ac.uk/deeslr/article/viewFile/1756/1693",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law No 188 (I)/2004 on Electronic Signatures"
+      ]
+    },
+    {
+      "@id": "http://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page3b_en/page3b_en?opendocument",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law 125(I)/2018"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "https://publications.europa.eu/en/publication-detail/-/publication/3e485e15-11bd-11e6-ba9a-01aa75ed71a1/language-en"
+        }
+      ]
+    },
+    {
+      "@id": "https://publications.europa.eu/en/publication-detail/-/publication/3e485e15-11bd-11e6-ba9a-01aa75ed71a1/language-en",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Regulation (EU) 2016/679"
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/enop/non-ind/2016_1_73/index.html",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Laws 73(I)/2016"
+      ]
+    },
+    {
+      "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0055",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Directive 2014/55/EU"
+      ],
+      "http://purl.org/dc/terms/relation": [
+        {
+          "@id": "http://www.cylaw.org/nomoi/arith/2019_1_089.pdf"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/arith/2019_1_089.pdf",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law 89(I)/2019"
+      ]
+    },
+    {
+      "@id": "http://www.cylaw.org/nomoi/indexes/2012_1_81.html",
+      "@type": [
+        "http://data.europa.eu/eli/ontology#LegalResource"
+      ],
+      "http://data.europa.eu/eli/ontology#title": [
+        "Law on Electronic Money 81(I)/2012"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/person/KyriacosKokkinos",
+      "@type": [
+        "http://xmlns.com/foaf/0.1/Person"
+      ],
+      "http://xmlns.com/foaf/0.1/name": [
+        "Kyriacos Kokkinos"
+      ],
+      "http://www.w3.org/ns/org#holds": [
+        {
+          "@id": "http://example.org/nifo/post/Post-DeputyMinisterofResearch,InnovationandDigitalPolicy"
+        },
+        {
+          "@id": "http://example.org/nifo/post/Post-Director,MedicalandPublicHealthServices"
+        }
+      ],
+      "http://schema.org/contactPoint": [
+        {
+          "@id": "http://example.org/ContactPoint/3625"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/post/Post-DeputyMinisterofResearch,InnovationandDigitalPolicy",
+      "@type": [
+        "http://www.w3.org/ns/org#Post"
+      ],
+      "http://www.w3.org/ns/org#role": [
+        {
+          "@id": "http://example.org/nifo/role/Role-DeputyMinisterofResearch,InnovationandDigitalPolicy"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/role/Role-DeputyMinisterofResearch,InnovationandDigitalPolicy",
+      "@type": [
+        "http://www.w3.org/ns/org#Role"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        "Deputy Minister of Research, Innovation and Digital Policy"
+      ]
+    },
+    {
+      "@id": "http://example.org/ContactPoint/3625",
+      "@type": [
+        "http://schema.org/ContactPoint"
+      ],
+      "http://schema.org/telephone": [
+        "+357 22691901"
+      ],
+      "http://schema.org/faxNumber": [
+        "+357 22691919"
+      ],
+      "http://schema.org/email": [
+        "depminister@dmrid.gov.cy"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/person/Dr.ElisavetConstantinou",
+      "@type": [
+        "http://xmlns.com/foaf/0.1/Person"
+      ],
+      "http://xmlns.com/foaf/0.1/name": [
+        "Dr. Elisavet Constantinou"
+      ],
+      "http://schema.org/contactPoint": [
+        {
+          "@id": "http://example.org/ContactPoint/6070"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/post/Post-Director,MedicalandPublicHealthServices",
+      "@type": [
+        "http://www.w3.org/ns/org#Post"
+      ],
+      "http://www.w3.org/ns/org#role": [
+        {
+          "@id": "http://example.org/nifo/role/Role-Director,MedicalandPublicHealthServices"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/role/Role-Director,MedicalandPublicHealthServices",
+      "@type": [
+        "http://www.w3.org/ns/org#Role"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        "Director, Medical and Public Health Services "
+      ]
+    },
+    {
+      "@id": "http://example.org/ContactPoint/6070",
+      "@type": [
+        "http://schema.org/ContactPoint"
+      ],
+      "http://schema.org/telephone": [
+        "+357 22 605 600"
+      ],
+      "http://schema.org/faxNumber": [
+        "+357 22 605 601"
+      ],
+      "http://schema.org/email": [
+        "director@mphs.moh.gov.cy"
+      ],
+      "http://schema.org/url": [
+        "https://www.moh.gov.cy/moh/moh.nsf/page34_en/page34_en?OpenDocument"
+      ]
+    },
+    {
+      "@id": "http://www.mof.gov.cy/mof/dits/dits.nsf/index_en/index_en?OpenDocument",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://example.org/nifo/person/ActingDirector,DepartmentofInformationTechnologyServices(DITS)",
+      "@type": [
+        "http://xmlns.com/foaf/0.1/Person"
+      ],
+      "http://xmlns.com/foaf/0.1/name": [
+        "Acting Director, Department of Information Technology Services (DITS)"
+      ],
+      "http://schema.org/contactPoint": [
+        {
+          "@id": "http://example.org/ContactPoint/4019"
+        }
+      ]
+    },
+    {
+      "@id": "http://example.org/ContactPoint/4019",
+      "@type": [
+        "http://schema.org/ContactPoint"
+      ],
+      "http://schema.org/telephone": [
+        "+357 22601352"
+      ],
+      "http://schema.org/faxNumber": [
+        "+357 22 60 27 45"
+      ],
+      "http://schema.org/email": [
+        "director@dmrid.gov.cy"
+      ],
+      "http://schema.org/url": [
+        "Source: http://dits.dmrid.gov.cy/"
+      ]
+    },
+    {
+      "@id": "http://portal.dls.moi.gov.cy/en-us/Pages/The-Department-of-Lands-and-Surveys-Web-Portal.aspx",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.cyprus.gov.cy/",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://eforms.businessincyprus.gov.cy/eforms/ekeforms.nsf/eke.personalspace_en/eke.personalspace_en?OpenForm",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://cge.cyprus.gov.cy/",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://anticorruption.pias.gov.cy/pias/pias.nsf/index_en/index_en?opendocument",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.police.gov.cy/pias/pias.nsf/infocomplaints_en/infocomplaints_en?opendocument",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.cypruspost.post/",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://dits.dmrid.gov.cy/dmrid/dits/dits.nsf/All/123A11A0573FE559C22578F60034739E?OpenDocument",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.mof.gov.cy/papd",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://www.eprocurement.gov.cy/ceproc/home.do",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.mof.gov.cy/mof/DITS/dits.nsf/All/7DEFAE951CBAA6E9C22578180034E0CF?OpenDocument",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.moa.gov.cy/moa/dfmr/dfmr.nsf/All/F9C1AD116BB0F692C2258320002A78DB/$file/DFMR_IT%20Strategy.pdf",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.piopressreleases.com.cy/",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "http://www.publications.gov.cy/",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://ec.europa.eu/health/sites/health/files/cross_border_care/docs/cbhc_ncp_en.pdf",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    },
+    {
+      "@id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32011L0024",
+      "@type": [
+        "http://purl.org/vocab/cpsv#FormalFramework"
+      ]
+    }
+  ]
+}

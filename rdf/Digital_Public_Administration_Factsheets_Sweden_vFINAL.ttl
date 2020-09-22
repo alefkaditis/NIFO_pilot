@@ -1,0 +1,85 @@
+<http://data.europa.eu/nifo/factsheet/Sweden> <http://purl.org/dc/terms/isPartOf> <http://data.europa.eu/nifo/factsheets/>;
+ <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Sweden>;
+ <http://purl.org/dc/terms/issued> "2019-07";
+ <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/";
+ <http://purl.org/dc/terms/spatial> "http://publications.europa.eu/resource/authority/country/SWE";
+ <http://purl.org/dc/terms/relation> <http://example.org/nifo/dataset/DigitalPublicAdministrationIndicatorsSweden>, <http://example.org/nifo/dataset/ThefollowinggraphspresentdataforthelatestDigitalPublicAdministrationIndicatorsforSwedencomparedtotheEUaverage.StatisticalindicatorsinthissectionreflectthoseofEurostatatthetimetheEditionisbeingprepared.Sweden>, <http://example.org/nifo/legalframework/Sweden>, <https://ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-peoplehttps:/ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-people>, <https://rib.msb.se/filer/pdf/28898.pdf%252520%252520%252520>, <http://example.org/nifo/person/AndersYgeman>, <http://data.europa.eu/nifo/factsheet/undefined>, <http://www.geodata.se/>, <https://www.geodata.se/geodataportalen>, <https://inspire-geoportal.ec.europa.eu/>, <https://www.dataportal.se>, <https://digiplace.sharepoint.com/sites/WE-EUROPEANCOMMISSION-ABCIVSC263NIFO/Shared%20Documents/D04.01%20Digital%20Government%20factsheets%20and%20infographics/Country%20factsheets%202020/Sweden/deladigitalt.se>, <https://skl.se/>, <https://www.msb.se/sv/verktyg--tjanster/sgsi/>, <https://www.inera.se/>, <https://skl.se/tjanster/englishpages.411.html>, <https://skl.se/naringslivarbetedigitalisering/digitalisering/informationssakerhet/sakerdigitalkommunikation.13701.html>, <http://docs.peppol.eu/poacc/billing/3.0/bis/>, <https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-20181277-om-elektroniska-fakturor-till_sfs-2018-1277>, <https://sambruk.se/>;
+ <http://dbpedia.org/ontology/populationTotal> "10 230 185 inhabitants (2019)";
+ <http://dbpedia.org/property/gdpNominal> "474 683.3 million Euros (2019)";
+ <http://dbpedia.org/property/gdpPppPerCapita> "120 (2019)";
+ <http://dbpedia.org/ontology/areaTotal> "438 576 km2";
+ <http://dbpedia.org/ontology/capital> "Stockholm";
+ <http://purl.org/dc/terms/language> "Swedish";
+ <http://dbpedia.org/ontology/currency> <http://publications.europa.eu/resource/authority/currency/Swedish%20krona%20SEK>;
+ <http://purl.org/dc/terms/source> <https://ec.europa.eu/eurostat/data/database>, <http://data.europa.eu/nifo/factsheet/undefined>, <https://ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-peoplehttps:/ec.europa.eu/digital-single-market/en/news/egovernment-benchmark-2020-egovernment-works-people>;
+ <http://purl.org/dc/terms/title> "Interoperability State of Play", "eGovernment State of Play ", "Digital Public Administration Political Communications", "During the last years, the Swedish government increased its focus on interoperability and standardisation. Proof of this are the different government assignments for standardised and interoperable information and data exchange. ", "In 2016, the Government and the Swedish Association of Local Authorities and Regions (SALAR) agreed on a vision for eHealth. This vision aims to support efforts to make use of the opportunities of digitisation in social services and health care and have decided to endorse a common vision for eHealth up to 2025." .
+<http://example.org/nifo/dataset/DigitalPublicAdministrationIndicatorsSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataSet>;
+ <http://purl.org/dc/terms/title> "Digital Public Administration Indicators";
+ <http://purl.org/linked-data/cube#structure> <http://example.org/nifo/structure/DigitalPublicAdministrationIndicatorsSweden>;
+ <http://purl.org/dc/terms/source> "http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=isoc_bde15ei&lang=en,http://epp.eurostat.ec.europa.eu/tgm/table.do?tab=table&init=1&language=en&pcode=tin00111&plugin=1" .
+<http://example.org/nifo/structure/DigitalPublicAdministrationIndicatorsSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#DataStructureDefinition>;
+ <http://purl.org/linked-data/cube#component> <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinSweden>;
+ <http://www.w3.org/2000/01/rdf-schema#label> <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinSweden>, <http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinSweden> .
+<http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforinteractingwithpublicauthoritiesinSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+<http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforobtaininginformationfrompublicauthoritiesinSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+<http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetfordownloadingofficialformsfrompublicauthoritiesinSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+<http://example.org/nifo/MeasureProperty/PercentageofindividualsusingtheinternetforsendingfilledformstopublicauthoritiesinSweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/linked-data/cube#MeasureProperty> .
+<https://rib.msb.se/filer/pdf/28898.pdf%252520%252520%252520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+<https://rib.msb.se/filer/pdf/28898.pdf%20%20%20> <http://purl.org/dc/terms/title> "Comprehensive cyber security action plan 2019-2020 ";
+ <http://purl.org/dc/terms/relation> <https://www.msb.se/sv/publikationer/samlad-informations--och-cybersakerhetshandlingsplan-for-aren-20192022--redovisning-2020/> .
+<https://www.msb.se/sv/publikationer/samlad-informations--och-cybersakerhetshandlingsplan-for-aren-20192022--redovisning-2020/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint>;
+ <http://purl.org/dc/terms/title> "cyber security action plan" .
+<http://example.org/nifo/legalframework/Sweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework>;
+ <http://purl.org/dc/terms/relation> <https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/forvaltningslag-2017900_sfs-2017-900>, <https://www.riksdagen.se/globalassets/07.-dokument--lagar/the-freedom-of-the-press-act-2015.pdf>, <https://open.karnovgroup.se/forvaltningsratt/SFS2010-0566>, <https://www.regeringen.se/informationsmaterial/2009/09/public-access-to-information-and-secrecy-act/>, <https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2013311-om-valfrihetssystem-i-fraga-om_sfs-2013-311>, <https://www.sakerhetspolisen.se/en/swedish-security-service/protective-security.html>, <https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679>, <https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/folkbokforingslag-1991481_sfs-1991-481>, <http://rkrattsbaser.gov.se/sfst?bet=2001:558>, <https://open.karnovgroup.se/fastighetsratt/SFS2000-0224>, <https://open.karnovgroup.se/yttrandefrihet-mm/SFS1980-0343>, <https://open.karnovgroup.se/naringsratt/lou>, <https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-20181277-om-elektroniska-fakturor-till_sfs-2018-1277>, <https://open.karnovgroup.se/naringsratt/e-handelslagen> .
+<https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/forvaltningslag-2017900_sfs-2017-900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Administrative Procedure Act" .
+<https://www.riksdagen.se/globalassets/07.-dokument--lagar/the-freedom-of-the-press-act-2015.pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Freedom of the Press Act." .
+<https://open.karnovgroup.se/forvaltningsratt/SFS2010-0566> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Law No. 2010:566" .
+<https://www.regeringen.se/informationsmaterial/2009/09/public-access-to-information-and-secrecy-act/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Public Access to Information and Secrecy Act" .
+<https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2013311-om-valfrihetssystem-i-fraga-om_sfs-2013-311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "law" .
+<https://www.sakerhetspolisen.se/en/swedish-security-service/protective-security.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Protective Security Act" .
+<https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "General Data Protection Regulation" .
+<https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/folkbokforingslag-1991481_sfs-1991-481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Population Registration Act" .
+<http://rkrattsbaser.gov.se/sfst?bet=2001:558> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Road Traffic Registration Act" .
+<https://open.karnovgroup.se/fastighetsratt/SFS2000-0224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Cadastre Act" .
+<https://open.karnovgroup.se/yttrandefrihet-mm/SFS1980-0343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Tax Registration Act" .
+<https://open.karnovgroup.se/naringsratt/lou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "Public Procurement Act" .
+<https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-20181277-om-elektroniska-fakturor-till_sfs-2018-1277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>, <http://purl.org/vocab/cpsv#FormalFramework>;
+ <http://data.europa.eu/eli/ontology#title> "Law on electronic invoices as a result of public procurement" .
+<https://open.karnovgroup.se/naringsratt/e-handelslagen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.europa.eu/eli/ontology#LegalResource>;
+ <http://data.europa.eu/eli/ontology#title> "act" .
+<http://example.org/nifo/person/AndersYgeman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person>;
+ <http://xmlns.com/foaf/0.1/name> "Anders Ygeman";
+ <http://www.w3.org/ns/org#holds> <http://example.org/nifo/post/Post-MinisterforEnergyandDigitalDevelopment>;
+ <http://schema.org/contactPoint> <http://example.org/ContactPoint/2966> .
+<http://example.org/nifo/post/Post-MinisterforEnergyandDigitalDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Post>;
+ <http://www.w3.org/ns/org#role> <http://example.org/nifo/role/Role-MinisterforEnergyandDigitalDevelopment> .
+<http://example.org/nifo/role/Role-MinisterforEnergyandDigitalDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#Role>;
+ <http://www.w3.org/2000/01/rdf-schema#label> "Minister for Energy and Digital Development " .
+<http://example.org/ContactPoint/2966> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint>;
+ <http://schema.org/telephone> "+46 8 405 10 00";
+ <http://schema.org/url> "http://www.government.se/" .
+<http://data.europa.eu/nifo/factsheet/undefined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<http://www.geodata.se/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://www.geodata.se/geodataportalen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://inspire-geoportal.ec.europa.eu/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://www.dataportal.se> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://digiplace.sharepoint.com/sites/WE-EUROPEANCOMMISSION-ABCIVSC263NIFO/Shared%20Documents/D04.01%20Digital%20Government%20factsheets%20and%20infographics/Country%20factsheets%202020/Sweden/deladigitalt.se> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://skl.se/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://www.msb.se/sv/verktyg--tjanster/sgsi/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://www.inera.se/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://skl.se/tjanster/englishpages.411.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://skl.se/naringslivarbetedigitalisering/digitalisering/informationssakerhet/sakerdigitalkommunikation.13701.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<http://docs.peppol.eu/poacc/billing/3.0/bis/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://sambruk.se/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/cpsv#FormalFramework> .
